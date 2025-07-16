@@ -13,6 +13,14 @@ export default function Comments() {
       ? "transparent_dark"
       : "dark";
 
+  // ✅ Only show Giscus if env vars are present
+  const isConfigured = giscusRepoId && giscusCategoryId;
+
+  if (!isConfigured) {
+    // Optionally show fallback or nothing
+    return null;
+  }
+
   return (
     <Giscus
       id="comments"
