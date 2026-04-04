@@ -26,6 +26,7 @@
 ## Run Project Locally
 
 Follow this guide to get this site runnning locally:
+New
 
 ### Clone Repository
 
